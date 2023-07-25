@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Đăng ký</h1>
+        <form action="http://20.92.229.217" method="GET" onsubmit="return registerValidate()">
+            <div>
+                <label for="MSSV" class="form-label">MSSV:</label>
+                <input type="text" name="MSSV" id="MSSV" placeholder="Nhập MSSV..."
+                    class="form-control">
+                <div class="invalid-feedback">
+                    MSSV lỗi!!! 
+                </div>
+                <div class="valid-feedback">
+                    Hợp lệ
+                </div>
+            </div>
+            <div>
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Nhập username..."
+                    class="form-control">
+                <div class="invalid-feedback">
+                    Username lỗi!!! Phải chứa từ 6-30 ký tự a-z0-9
+                </div>
+                <div class="valid-feedback">
+                    Hợp lệ
+                </div>
+            </div>
+            <div>
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Nhập password..."
+                    class="form-control">
+                <div class="invalid-feedback">
+                    Password lỗi !!! Phải chưa ít nhất 1 chữ số từ 0-9, 1 chữ in hoa A-Z và có ít nhất 6 ký tự
+                </div>
+                <div class="valid-feedback">
+                    Hợp lệ
+                </div>
+            </div>
+            <div>
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Nhập phone..."
+                    class="form-control">
+                <div class="invalid-feedback">
+                    Phone lỗi !!! phải bắt đầu bằng +84 hoặc 0, có đúng 9 chữ số từ 0-9
+                </div>
+                <div class="valid-feedback">
+                    Hợp lệ
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+    <script src="public/js/app.js"></script>
+</body>
+
+</html>
